@@ -1,0 +1,51 @@
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 11300ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-enter-active {
+  opacity: 0;
+  transition: all 1s ease-in;
+
+}
+
+
+
+.slideUp-enter {
+  opacity: 0;
+  transform: perspective(900px) rotate3d(180, 0,0,-135deg) translateY(100%);
+
+}
+
+.slideUp-enter-active {
+  transform: perspective(0) rotate3d(0, 0, 0, 0) translateY(0);
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.slideUp-exit {
+  opacity: 0;
+  transform: perspective(900px) rotate3d(180, 0,0,-135deg) translateY(100%);
+  transition: all 1s ease-in-out;
+}
+
+.slideUp-exit-done {
+  display: none;
+}
+
+//.slideUp-leave {
+//  opacity: 1;
+//}
+
+.slideUp-leave-active {
+  opacity: 0;
+  transform: perspective(900px) rotate3d(180, 0,0,-135deg) translateY(100%);
+}
